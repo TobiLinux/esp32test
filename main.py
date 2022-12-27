@@ -5,7 +5,7 @@ temp = esp32.raw_temperature() # read the internal temperature of the MCU, in Fa
 #esp32.ULP()             # access to the Ultra-Low-Power Co-processor
 
 while True:
-  hall = esp32.hall_sensor()     # read the internal hall sensor
+	hall = esp32.hall_sensor()     # read the internal hall sensor
 	temp = esp32.raw_temperature() # read the internal temperature of the MCU, in Fahrenheit
 	print(hall)
 	print(temp)
