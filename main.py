@@ -4,6 +4,6 @@ while True:
 	hall = esp32.hall_sensor()     # read the internal hall sensor
 	temp = esp32.raw_temperature() # read the internal temperature of the MCU, in Fahrenheit
 	print('Hall Sensor: ', hall)
-	print('Temperatura: ', temp)
+	print('Temperatura: ', (temp-32.0)/1.8)
 	print('<-+-+-+-+-+-+-+-+-+-+->')
 	time.sleep(1)
