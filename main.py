@@ -11,7 +11,7 @@ while True:
 	temp = esp32.raw_temperature() # read the internal temperature of the MCU, in Fahrenheit
 	display.fill(0)
 	display.text(f'SHall: {hall}', 0, 0)
-	display.text(f'Temp: {round((temp-32.0)/1.8,2)} C°', 0, 15) # F° to C°
+	display.text(f'Temp: {round((temp-32.0)/1.8,2)} C', 0, 15) # F° to C°
 	display.show()
 	time.sleep(1)
 
