@@ -12,9 +12,9 @@ print('Corriendo main.py')
 while True:
 	hall = esp32.hall_sensor()     # read the internal hall sensor
 	temp = esp32.raw_temperature() # read the internal temperature of the MCU, in Fahrenheit
-	print('Hall Sensor: ', hall)
-	print('Temperatura: ', (temp-32.0)/1.8) # F° to C° 
-	print('<-+-+-+-+-+-+-+-+-+-+->')
+	display.text(f'Hall Sensor: {hall}', 0, 0, 1)
+	display.text(f'Temperatura: {(temp-32.0)/1.8}', 1, 0, 1) # F° to C°
+	display.show()
 	time.sleep(1)
 
 
